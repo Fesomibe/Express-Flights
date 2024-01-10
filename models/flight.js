@@ -32,7 +32,7 @@ const flightSchema = new Schema({
       // we want the default date to be a year from the day they book
     default: new Date(new Date().setFullYear(new Date().getFullYear() + 1))
   }, 
-  destinations: [destinationSchema]
+  destinations: [destinationSchema],
 });
 
 module.exports = mongoose.model('Flight', flightSchema);
